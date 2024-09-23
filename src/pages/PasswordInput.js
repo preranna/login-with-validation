@@ -19,8 +19,6 @@ const PasswordInput = ({ onPasswordChange }) => {
     } else {
       setPasswordError('');
     }
-
-    // Pass the valid password back to the parent component
     onPasswordChange(value, !validatePassword(value));
   };
 

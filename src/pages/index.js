@@ -33,10 +33,8 @@ const LoginForm = () => {
       <div className="background-image"></div>
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login</h2>
-
         <EmailInput onEmailChange={handleEmailChange} />
         <PasswordInput onPasswordChange={handlePasswordChange} />
-
         <button type="submit" disabled={emailError || passwordError}>
           Submit
         </button>
